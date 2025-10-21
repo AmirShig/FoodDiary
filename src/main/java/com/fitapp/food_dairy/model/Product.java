@@ -1,14 +1,12 @@
 package com.fitapp.food_dairy.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
+@Table(name = "products")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,8 +19,7 @@ public class Product {
     private double calories;
     private double protein;
     private double carbs;
-    private double fat;
+    private double fats;
 
     private long barcode;
-    private double weight_kg;
 }
